@@ -1,0 +1,5 @@
+var discountPrice = document.querySelectorAll('#spin-wrap > div > div > div.d-flex.modernize-spin.container.align-items-center.px-0.min-h-8.enableHover > div.d-inline-flex.spins-domain-info.pt-2.pb-2.pl-4.pr-1 > div.d-flex.text-right.align-items-center > div > span > div > span.text-nowrap > span')
+
+var actualPrice = document.querySelectorAll('#spin-wrap > div > div > div.d-flex.modernize-spin.container.align-items-center.px-0.min-h-8.enableHover > div.d-inline-flex.spins-domain-info.pt-2.pb-2.pl-4.pr-1 > div.d-flex.text-right.align-items-center > div > span > div > span.text-nowrap > span')
+
+#spin-wrap > div > div > div.d-flex.modernize-spin.container.align-items-center.px-0.min-h-8.enableHover > div.d-inline-flex.spins-domain-info.pt-2.pb-2.pl-4.pr-1 > div.d-flex.text-right.align-items-center > div > span:nth-child(1) > div > span.text-nowrap > span

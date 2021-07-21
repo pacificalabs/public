@@ -1,0 +1,41 @@
+{{ if .Site.Params.enforceSinglePage -}}
+<meta http-equiv="refresh" content="0; url={{ .Site.BaseURL }}">
+{{- else -}}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "body-top" . }}
+    <main>
+      <section class="blog" id="blog">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1>{{ humanize .Type }}</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 posts-list">
+              {{ range .Data.Pages }}
+              <article>
+                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+                <h4 class="description"> {{ .Params.Description }}
+                </h3>
+                <h4>{{ i18n "minuteRead" .ReadingTime }}
+                <svg width="25" height="8" viewBox="0 0 25 8" fill="#024966" xmlns="http://www.w3.org/2000/svg">
+                  <title>Arrow</title>
+                <path d="M24.3536 4.35355C24.5488 4.15829 24.5488 3.84171 24.3536 3.64645L21.1716 0.464466C20.9763 0.269204 20.6597 0.269204 20.4645 0.464466C20.2692 0.659728 20.2692 0.976311 20.4645 1.17157L23.2929 4L20.4645 6.82843C20.2692 7.02369 20.2692 7.34027 20.4645 7.53553C20.6597 7.7308 20.9763 7.7308 21.1716 7.53553L24.3536 4.35355ZM0 4.5H24V3.5H0V4.5Z" fill="#024966"></path>
+              </svg>
+              </h4>
+            </article>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "body-bottom" . }}
+</body>
+</html>
+{{- end }}

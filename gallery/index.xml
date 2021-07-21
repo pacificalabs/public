@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galleries on Pacifica Labs</title>
+    <link>https://pacifica-labs.bitbucket.io/gallery/</link>
+    <description>Recent content in Galleries on Pacifica Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-AU</language>
+    <lastBuildDate>Wed, 18 Sep 2019 21:57:17 -0700</lastBuildDate><atom:link href="https://pacifica-labs.bitbucket.io/gallery/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Services</title>
+      <link>https://pacifica-labs.bitbucket.io/gallery/services/</link>
+      <pubDate>Fri, 12 May 2017 22:25:02 -0700</pubDate>
+      
+      <guid>https://pacifica-labs.bitbucket.io/gallery/services/</guid>
+      <description>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.</description>
+    </item>
+    
+    <item>
+      <title>We&#39;re hiring</title>
+      <link>https://pacifica-labs.bitbucket.io/gallery/vacancies/</link>
+      <pubDate>Wed, 18 Sep 2019 21:57:17 -0700</pubDate>
+      
+      <guid>https://pacifica-labs.bitbucket.io/gallery/vacancies/</guid>
+      <description>{github-description} Get in touch!</description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>https://pacifica-labs.bitbucket.io/gallery/osprey/</link>
+      <pubDate>Mon, 15 May 2017 21:57:17 -0700</pubDate>
+      
+      <guid>https://pacifica-labs.bitbucket.io/gallery/osprey/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

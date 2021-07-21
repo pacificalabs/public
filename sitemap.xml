@@ -1,0 +1,59 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/services1/</loc>
+      <lastmod>2017-05-12T22:25:02-07:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/kdevo/</loc>
+      <lastmod>2019-05-17T22:25:16-07:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/toma-nistor/</loc>
+      <lastmod>2017-05-15T20:00:16-07:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/has-and-belongs-to-many/</loc>
+      <lastmod>2021-07-10T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/embedded-markdown-test/</loc>
+      <lastmod>2021-06-23T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/markdown-syntax/</loc>
+      <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/rich-content/</loc>
+      <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/placeholder-text/</loc>
+      <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/math-typesetting/</loc>
+      <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/blog/emoji-support/</loc>
+      <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://pacifica-labs.bitbucket.io/about/</loc>
+      <priority>0</priority>
+    </url>
+  
+</urlset>
