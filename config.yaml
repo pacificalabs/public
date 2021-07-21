@@ -1,5 +1,5 @@
 title: "Pacifica Labs"
-baseURL: "https://pacificalabs.github.io"
+baseURL: "/"
 languageCode: "en-AU"
 theme: "osprey-delight"
 tags: ["personal", "homepage", "portfolio"]

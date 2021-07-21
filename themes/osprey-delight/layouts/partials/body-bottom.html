@@ -1,4 +1,4 @@
-{{ $buildOptions := dict "minify" true "target" "es2015" }}
+{{ $buildOptions := dict "minify" false "target" "es2015" }}
 {{ if .IsHome }}
 {{ $scripts := slice }}
 {{ $scripts = $scripts | append (resources.Get "js/src/base.js") }}
