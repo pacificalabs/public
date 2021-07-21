@@ -1,5 +1,5 @@
 title: "Pacifica Labs"
-baseURL: "https://pacificalabs.github.io/public"
+baseURL: "https://pacificalabs.github.io"
 languageCode: "en-AU"
 theme: "osprey-delight"
 tags: ["personal", "homepage", "portfolio"]
@@ -9,12 +9,6 @@ relativeURLs: true
 disableKinds: ["taxonomy", "taxonomyTerm"]
 enableEmoji: true
 pygmentsUseClasses: true
-
-# Deployment:
-#   order: [".jpg$", ".png$"]
-#   targets:
-#     - name: "pacificalabs"
-#     - url: https://pacificablog.z8.web.core.windows.net/  
 
 ## Generic theme parameters:
 Params:
