@@ -8,7 +8,7 @@
     let loaded = 0;
 
     // let section = document.getElementsByTagName("section");
-    const elements = ["about", "blog", "footr"]
+    const elements = ["about", "blog", "footr","work","contact"]
     window.COLOURS = ["burlywood", "brown", "cadetblue", "crimson", "sienna", "indianred", "cornflowerblue"]
     window.COLOURED = [];
 
@@ -76,7 +76,9 @@
             document.getElementById(element).style.color = "#fff";
         })
         ITEMS.forEach((item) => { addStyles(item) })
-        $('#Work').style.color = "cornflowerblue"
+        // let index = Math.floor(Math.random() * colours.length);
+        // let colour = colours[index];
+        // $('#Work').style.color = colour;
         loaded++
     });
 
