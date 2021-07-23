@@ -8,10 +8,10 @@ tags = [
     "privacy",
 ]
 +++
-#### Why it matters:
-Though hosting a free static site sounds tempting, deployment version tracking & configuration can be fraught with unforeseen difficulties. Follow these straightforward steps to deploy your static site built with Hugo for free.
+### Why it matters:
+*Though hosting a free static site sounds tempting, deployment version tracking & configuration can be fraught with unforeseen difficulties. Follow these straightforward steps to deploy your static site built with Hugo for free.*
 
-#### Background
+### Background
 [Hugo](www.gohugo.com) is a superfast framework built in Googles own language Go. 
 
 When reviewing a static site generator our team were frustrated with the slow build time of Jekyll. 
@@ -20,17 +20,17 @@ The motto of Hugo is build sites lightning fast & the build time doesn't disappo
 
 *Deploying Hugo is not at all straightforward & the options on the Hugo website don't really offer anything that's fast to setup & user friendly to maintain. Below some considerations when choosing a static site....*  
 
-#### Assumptions & Prerequisites
+### Assumptions & Prerequisites
 1. You have Hugo installed & you're ready to publish your site online.
 2. You have initialized your root folder with git & have made a number of commitments.
 
-#### Steps:
+### Steps:
 
-1. Ensure your rootURl located in the config file (will be either YAML or TOML) has " " & not a url.
-```
-$ cat config.yaml
+1. Ensure your rootURl located in the config file (file extension will be either YAML or TOML) has " " & not a url.
+```bash
+# config.yaml
 title: "Pacifica Labs"
-baseURL: ""  # <-- note the absence of any url
+baseURL: ""  # note the absence of any url
 languageCode: "en-AU"
 ```
    
@@ -39,7 +39,6 @@ languageCode: "en-AU"
 ```bash
 $ hugo
 Start building sites …
-WARN 2019/07/21 23:10:34 Performance: inlined JS is 14730KB
 
                    | EN
 -------------------+-----
