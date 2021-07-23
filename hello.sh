@@ -18,6 +18,6 @@ cd ../
 
 git admit $commit
 
-push
+git push
 
 echo -e "DONE!"
