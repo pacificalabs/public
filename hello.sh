@@ -9,4 +9,4 @@ git push
 cd ../
 git admit $commit
 git push
-echo -e echo "******DEPLOYED******"
+echo "******DEPLOYED******"
