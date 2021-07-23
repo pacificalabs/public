@@ -1,6 +1,6 @@
-#!/bin/zsh
+echo "******DEPLOY HUGO******"
 
-echo -e "enter your commit message"
+echo "enter your commit message"
 
 read commit
 
@@ -20,4 +20,4 @@ git admit $commit
 
 git push
 
-echo -e "DONE!"
+echo -e echo "******DEPLOYED******"
