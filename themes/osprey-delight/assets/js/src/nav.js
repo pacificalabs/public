@@ -19,7 +19,7 @@ function fixNav(setFixed) {
         let index = Math.floor(Math.random() * navColours.length);
         let colour = navColours[index];
         nav.style.backgroundColor = "#fff";
-        $('#Work').style.color = "cornflowerblue"
+        // $('#Work').style.color = "cornflowerblue"
         nav.classList.remove('nav-fixed')
         navToggleAndLogo.forEach((el) => {
             setVisibility(el, false, false)

@@ -15,11 +15,19 @@
     function addStyles(currentItem) {
         var item = currentItem.getElementsByTagName('a')[0]
         var id = item.id.toLowerCase()
-        var color = document.getElementById(id).style.backgroundColor
-        item.style.color = color;
+        var colourStyles = window.getComputedStyle(document.getElementById(id))
+        var bColour = colourStyles.getPropertyValue('background-color');
+        console.log(bColour);
+        item.style.color = bColour;
         if (loaded == 1) {
             item.style.borderBottom = "3px solid"
         }
+    }
+
+    function removeStyles(currentItem) {
+        var item = currentItem.getElementsByTagName('a')[0]
+        debugger;
+        item.style.borderBottom = "";
     }
 
     function addText(currentItem) {
@@ -28,14 +36,6 @@
 
     function removeText(currentItem) {
         debugger;
-    }
-
-    function removeStyles(currentItem) {
-        var item = currentItem.getElementsByTagName('a')[0]
-        var id = item.id.toLowerCase()
-        var color = document.getElementById(id).style.backgroundColor
-        item.style.borderTop = "";
-        item.style.borderBottom = "";
     }
 
     function changeNavHeader(idx) {
