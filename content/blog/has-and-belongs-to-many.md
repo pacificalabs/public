@@ -1,7 +1,7 @@
 +++
 author = "Pacifica Labs"
 title = "Has and Belongs To Many (Headaches)"
-date = "2021-07-10"
+date = "2021-07-23"
 description = "The HABTM association is often confusing & can lead to frustration if defined incorrectly. We provide tips to make the setup painfree."
 tags = [
     "shortcodes",
