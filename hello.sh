@@ -13,3 +13,6 @@ cd ../
 git admit $commit
 git push
 echo "${RED}******DEPLOYED******${NC}"
+
+# echo 'hello' | read message
+# echo "$message"
