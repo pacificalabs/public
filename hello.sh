@@ -1,6 +1,5 @@
 RED='\033[0;31m'
 NC='\033[0m' # No Color
-printf "I ${RED}love${NC} Stack Overflow\n"
 echo "${RED}******DEPLOY HUGO******${NC}"
 echo "enter your commit message"
 read commit
@@ -13,6 +12,7 @@ cd ../
 git admit $commit
 git push
 echo "${RED}******DEPLOYED******${NC}"
-
+printf "I ${RED}love${NC} Stack Overflow\n"
+hugo server --disableFastRender
 # echo 'hello' | read message
 # echo "$message"
