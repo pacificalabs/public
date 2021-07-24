@@ -15,4 +15,4 @@ git push
 echo "${RED}******DEPLOYED******${NC}"
 printf "I ${RED}love${NC} Stack Overflow\n"
 hugo server --disableFastRender | read message
-printf "${BLUE}$message"
+echo "${BLUE}$message"
