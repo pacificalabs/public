@@ -18,7 +18,7 @@
             <div class="col-xs-12 posts-list">
               {{ range .Data.Pages }}
               <article>
-                <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <h3><a class="bloglist-title" href="{{ .Permalink }}">{{ .Title }}</a></h3>
                 <h4 class="description"> {{ .Params.Description }}
                 </h4>
                 <h4> {{ i18n "minuteRead" .ReadingTime }} <svg width="25" height="8" viewBox="0 0 25 8" fill="#024966" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,6 @@
               </svg>
               </h4>
               <ul class="list-group-horizontal">
-                tags:
                 {{ range .Params.tags }}
                 <li class="list-group-item">#{{ . }}</li>
                 {{ end }}

@@ -6,7 +6,9 @@ description = "Follow these straightforward steps to deploy your static site bui
 tags = [
     "hugo",
     "static-site",
-    "developer"
+    "developer",
+    "github",
+    "easy"
 ]
 +++
 #### *Follow these straightforward steps to deploy your static site built with Hugo for free.*

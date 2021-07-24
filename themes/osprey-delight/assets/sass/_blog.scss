@@ -1,7 +1,13 @@
-.list-group-horizontal .list-group-item {
-  display: inline;
-  margin: 0px 0.3rem 0px .1rem;
+.bloglist-title {
+    background: #0097A7;
+    color: salmon;
 }
+
+.list-group-horizontal .list-group-item {
+    display: inline;
+    margin: 0px 0.3rem 0px .1rem;
+}
+
 // Code
 pre code {
     color: inherit;
@@ -9,104 +15,104 @@ pre code {
 }
 
 pre {
-  margin-top: 8px;
-  // font: 12px $font-code;
-  padding: 16px;
-  border-radius: 4px;
-  margin-bottom: $vertical-rhythm;
-  overflow: auto;
-  word-wrap: normal;
-  // color: white;
-  // line-height: 1.45; or inherit
-  // background-color: $secondary-bg-color;
+    margin-top: 8px;
+    // font: 12px $font-code;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: $vertical-rhythm;
+    overflow: auto;
+    word-wrap: normal;
+    // color: white;
+    // line-height: 1.45; or inherit
+    // background-color: $secondary-bg-color;
 }
 
 .mono,
 tt {
-  font-family: $font-code;
+    font-family: $font-code;
 }
 
 
 // Quotes
 q {
-  @extend em;
+    @extend em;
 
-  &::before {
-    content: "\201C";
-  }
+    &::before {
+        content: "\201C";
+    }
 
-  &::after {
-    content: "\201D";
-  }
+    &::after {
+        content: "\201D";
+    }
 }
 
 %blockquote {
-  content: "\201C";
-  color: $accent-color;
-  font-family: $font-header;
-  font-size: 35px;
-  float: left;
+    content: "\201C";
+    color: $accent-color;
+    font-family: $font-header;
+    font-size: 35px;
+    float: left;
 }
 
 blockquote {
-  padding: 25px;
-  font-family: $font-header;
-  text-align: center;
+    padding: 25px;
+    font-family: $font-header;
+    text-align: center;
 
-  p {
-    display: inline-block;
-    font-style: italic;
-  }
+    p {
+        display: inline-block;
+        font-style: italic;
+    }
 
-  &::before {
-    @extend %blockquote;
-  }
+    &::before {
+        @extend %blockquote;
+    }
 
-  &::after {
-    @extend %blockquote;
-    content: "\201D";
-    float: right;
-  }
+    &::after {
+        @extend %blockquote;
+        content: "\201D";
+        float: right;
+    }
 }
 
 article {
-  margin-bottom: 3vh;
+    margin-bottom: 3vh;
 }
 
 article .p:selected {
-  color: aquamarine;
+    color: aquamarine;
 }
 
 .description {
-  color: #024966;
+    color: #024966;
 }
 
 .posts-list {
-  margin: 0 0 $vertical-rhythm;
+    margin: 0 0 $vertical-rhythm;
 }
 
 .sub-header,
 time {
-  @include size(p);
-  margin-bottom: $vertical-rhythm;
-  color: $alt-text-color;
+    @include size(p);
+    margin-bottom: $vertical-rhythm;
+    color: $alt-text-color;
 }
 
 .content {
-  width: 100%;
-  text-align: left;
+    width: 100%;
+    text-align: left;
 
-  time {
-    margin-left: 3px;
-  }
+    time {
+        margin-left: 3px;
+    }
 
-  a {
-    background-image: linear-gradient($accent-color, $accent-color);
-    background-repeat: repeat-x;
-    background-position: 0 95%;
-    background-size: 1px 2px;
-    text-decoration: none;
-/*    text-shadow: .03em 0 $link-shadow-color, -.03em 0 $link-shadow-color, 0 .03em $link-shadow-color, 0 -.03em $link-shadow-color,
+    a {
+        background-image: linear-gradient($accent-color, $accent-color);
+        background-repeat: repeat-x;
+        background-position: 0 95%;
+        background-size: 1px 2px;
+        text-decoration: none;
+        /*    text-shadow: .03em 0 $link-shadow-color, -.03em 0 $link-shadow-color, 0 .03em $link-shadow-color, 0 -.03em $link-shadow-color,
     .06em 0 $link-shadow-color, -.06em 0 $link-shadow-color, .09em 0 $link-shadow-color, -.09em 0 $link-shadow-color,
     .12em 0 $link-shadow-color, -.12em 0 $link-shadow-color, .15em 0 $link-shadow-color, -.15em 0 $link-shadow-color,
     .03em .075em $link-shadow-color, -.03em .075em $link-shadow-color, .06em .075em $link-shadow-color,
@@ -114,39 +120,39 @@ time {
     .12em .075em $link-shadow-color, -.12em .075em $link-shadow-color, .15em .075em $link-shadow-color,
     -.15em .075em $link-shadow-color;*/
 
-    &:hover {
-      color: $accent-color;
+        &:hover {
+            color: $accent-color;
+        }
     }
-  }
 }
 
 a::selection {
-  /*text-shadow: none;*/
-  color: yellow;
-  text-underline-position: all;
+    /*text-shadow: none;*/
+    color: #fff;
+    text-underline-position: all;
 }
 
 .pagination {
-  margin: 50px 0 0;
+    margin: 50px 0 0;
 
- & :nth-child(2) {
-    float: right;
-  }
+    & :nth-child(2) {
+        float: right;
+    }
 }
 
 .blog {
-  display: flex;
-  min-height: 100vh;
-  background-color: $primary-bg-color;
+    display: flex;
+    min-height: 100vh;
+    background-color: $primary-bg-color;
 
-  h2 {
-    margin-bottom: 0;
-  }
+    h2 {
+        margin-bottom: 0;
+    }
 
-  h3 {
-    margin: 1vh 0 0.2vh 0;
-  font-family: $font-body;
-  }
+    h3 {
+        margin: 1vh 0 0.2vh 0;
+        font-family: $font-body;
+    }
 }
 
 // TODO(kdevo): Add responsive table CSS
