@@ -1,5 +1,5 @@
 RED='\033[0;31m'
-BLUE'\033[0;34m'
+BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 echo "${RED}******DEPLOY HUGO******${NC}"
 echo "enter your commit message"
@@ -15,5 +15,4 @@ git push
 echo "${RED}******DEPLOYED******${NC}"
 printf "I ${RED}love${NC} Stack Overflow\n"
 hugo server --disableFastRender | read message
-# echo 'hello' | read message
-echo "${BLUE}$message${NC}"
+printf "${BLUE}$message${NC}"
