@@ -14,5 +14,6 @@ git admit $commit
 git push
 echo "${RED}******DEPLOYED******${NC}"
 printf "I ${RED}love${NC} Stack Overflow\n"
-hugo server --disableFastRender | read message
-echo "${BLUE}$message"
+hugo server --disableFastRender
+#  | read message
+# echo "${BLUE}$message"
