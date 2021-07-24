@@ -4,12 +4,15 @@ title = "How-To-Guide: Publish your Hugo-built static site online."
 date = "2021-07-23"
 description = "Follow these straightforward steps to deploy your static site built with Hugo for free."
 tags = [
-    "shortcodes",
-    "privacy",
+    "hugo",
+    "static-site",
+    "developer"
 ]
 +++
+#### *Follow these straightforward steps to deploy your static site built with Hugo for free.*
+
 ### Why it matters:
-*Though hosting a free static site sounds tempting, deployment version tracking & configuration can be fraught with unforeseen difficulties. Follow these straightforward steps to deploy your static site built with Hugo for free.*
+*Though hosting a free static site sounds tempting, deployment version tracking & configuration can be fraught with unforeseen difficulties.*
 
 ### Background
 [Hugo](www.gohugo.com) is a superfast framework built in Googles own language Go. 
