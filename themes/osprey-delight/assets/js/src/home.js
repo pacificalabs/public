@@ -7,17 +7,23 @@
     var oldIdx = -1
     let loaded = 0;
 
-    // let section = document.getElementsByTagName("section");
-    const elements = ["about", "blog", "footr","work","contact"]
+    const elements = ["about", "blog", "footr", "work", "contact"]
     window.COLOURS = ["burlywood", "brown", "cadetblue", "crimson", "sienna", "indianred", "cornflowerblue"]
-    window.COLOURED = [];
+
+    function selectRandomColourName(colours) {
+        let index = Math.floor(Math.random() * colours.length);
+        let colour = colours[index];
+        colours.splice(colours.indexOf(colour), 1);
+        return colour;
+    }
 
     function addStyles(currentItem) {
         var item = currentItem.getElementsByTagName('a')[0]
         var id = item.id.toLowerCase()
+        // if (id == "contact") { return }
+        // we don't want contact text to colour to be as pale as colour background 
         var colourStyles = window.getComputedStyle(document.getElementById(id))
         var bColour = colourStyles.getPropertyValue('background-color');
-        console.log(bColour);
         item.style.color = bColour;
         if (loaded == 1) {
             item.style.borderBottom = "3px solid"
@@ -26,16 +32,7 @@
 
     function removeStyles(currentItem) {
         var item = currentItem.getElementsByTagName('a')[0]
-        debugger;
         item.style.borderBottom = "";
-    }
-
-    function addText(currentItem) {
-        debugger;
-    }
-
-    function removeText(currentItem) {
-        debugger;
     }
 
     function changeNavHeader(idx) {
@@ -51,57 +48,34 @@
         oldIdx = idx
     }
 
-    // function addColourToNavItem() {
-    //     ITEMS.forEach((item) => {
-    //         item.classList.add(window.COLOURED[ITEMS.indexOf(item)]);
-    //         window.COLOURED.forEach((colore) => {
-    //             console.log("removecolore", colore)
-    //             console.log("1", window.item.classList.value)
-    //             window.item.classList.remove(colore);
-    //             console.log("2", window.item.classList.value)
-    //         })
-    //         console.log("removecolour", colour)
-    //         console.log(window.COLOURS)
-    //         console.log(window.COLOURS)
-    //         console.log("3", window.item.classList.value)
-    //     });
-    // }
     window.addEventListener('load', (event) => {
-        let colours = window.COLOURS;
+        let colours = JSON.parse(JSON.stringify(window.COLOURS));
         elements.forEach((element) => {
-            let index = Math.floor(Math.random() * colours.length);
-            let colour = colours[index];
-            colours.splice(colours.indexOf(colour), 1);
+            colour = selectRandomColourName(colours);
             document.getElementById(element).style.backgroundColor = colour;
-            document.getElementById(element).style.color = "#fff";
         })
         ITEMS.forEach((item) => { addStyles(item) })
-        // let index = Math.floor(Math.random() * colours.length);
-        // let colour = colours[index];
-        // $('#Work').style.color = colour;
         loaded++
     });
 
     $$(".gallery-item").forEach((item) => {
         item.addEventListener('mouseover', (e) => {
-            $('#Work').innerText = item.innerText;
+            let textOptions = { "Services": "Services", "Technology": "TECH", "We're hiring": "Vacancies"};
+            if (textOptions[item.innerText] ) { $('#Work').innerText = textOptions[item.innerText]};
             $('#Work').style.color = item.style.backgroundColor;
             $('#Work').style.borderBottom = "3px solid"
         })
     });
 
-    document.getElementById('blog').addEventListener('mouseenter', (e) => {
-        [...$$('.nav-item')].forEach((item) => {
-            item.style.borderBottom = ""
-            $('#Blog').style.borderBottom = "3px solid"
+    document.getElementById('work').addEventListener('mouseenter', (e) => {
+        ITEMS.forEach((item) => {
+            var colourStyles = window.getComputedStyle(item);
+            var borderStyle = colourStyles.getPropertyValue('borderBottom');
+            if (item.innerText == "work" && borderStyle != "" )  {
+            item.style.borderBottom = "3px solid";
+            }
         })
     })
-
-    // document.getElementById('blog').addEventListener('mouseleave', (e) => {
-    //     [...$$('.nav-item')].forEach((item) => {
-    //         item.style.borderBottom = ""
-    //     })
-    // })
 
     window.addEventListener("scroll", (event) => {
         var scrollPosition = window.scrollY || window.pageYOffset
@@ -120,28 +94,4 @@
             requestAnimationFrame(() => { changeNavHeader(idx) })
         }
     });
-
-    /*
-    var header = $('header')
-    var oldViewportHeight = 0;
-    const heightChangeThreshold = 120; // approximate address bar height fits for Chrome (100) and Brave (104)
-    // Viewport size in mobile is impaired by address bar that automatically collapses on scroll.
-    // This updates it to the "real dynamic viewport size"
-    function updateViewportToInner() {
-      // Adapted from: https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-      // let vh = window.innerHeight * 0.01;
-      // document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-      // The following is a nasty hack and definitely not perfect: 
-      // We only want to change the height if the user directly resizes the window, 
-      // hence we aim to ignore "auto-collapse" address bar resize events by only resizing if guessed threshold was exceeded.
-      if (Math.abs(oldViewportHeight - window.innerHeight) > heightChangeThreshold) {
-        // header.style.maxHeight = window.innerHeight + 'px'
-        header.style.height = window.innerHeight + 'px'
-        oldViewportHeight = window.innerHeight
-      }
-    }
-    updateViewportToInner()
-    window.addEventListener('resize', updateViewportToInner)
-    */
 })()
