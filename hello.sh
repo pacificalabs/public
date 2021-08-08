@@ -8,10 +8,10 @@ echo "${RED}you have entered $commit ${NC}"
 hugo
 cd public
 git admit $commit
-git push
+git push -f
 cd ../
 git admit $commit
-git push
+git push -f
 echo "${RED}******DEPLOYED******${NC}"
 printf "I ${RED}love${NC} Stack Overflow\n"
 hugo server --disableFastRender
