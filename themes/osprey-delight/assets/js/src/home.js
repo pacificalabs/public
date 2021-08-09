@@ -49,6 +49,7 @@
     }
 
     window.addEventListener('load', (event) => {
+        console.log('loaded');
         let colours = JSON.parse(JSON.stringify(window.COLOURS));
         elements.forEach((element) => {
             colour = selectRandomColourName(colours);

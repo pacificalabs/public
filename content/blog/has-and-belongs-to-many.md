@@ -4,8 +4,11 @@ title = "Has and Belongs To Many (Headaches)"
 date = "2021-07-23"
 description = "The HABTM association is often confusing & can lead to frustration if defined incorrectly. We provide tips to make the setup painfree."
 tags = [
-    "shortcodes",
-    "privacy",
+    "ruby-on-rails",
+    "active-record",
+    "developer",
+    "database",
+    "back-end"
 ]
 +++
 Vice President Harris will visit the U.S.-Mexico border while in El Paso, Texas, on Friday, Politico first reported and Axios confirmed.

@@ -7,25 +7,36 @@
   <body>
     {{ partial "body-top" . }}
     <main>
-
       <section class="container">
         <section class="content">
-          <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
-
-            <div class="sub-header">
-              {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ i18n "minuteRead" .ReadingTime }}
-            </div>
-
+          <h1 class="blog-header">{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+          <div class="sub-header">
+            Updated: {{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }}
+          </div>
+          <div class="sub-header">
+            {{ if .Params.description }}
+            <h3>
+            {{ .Params.description }}
+            </h3>
+            {{ end }}
+          </div>
+          <div class="sub-header">
+            {{ if .Params.whyitmatters }}
+            <h3>
+            <i>Why it matters:</i>
+            </h3>
+            {{ .Params.whyitmatters }}
+            {{ end }}
+          </div>
           <article class="entry-content">
             {{ .Content }}
           </article>
-
           <div class="pagination">
             {{ if .PrevInSection }}
-              <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ .PrevInSection.Title }}</a>
+            <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ .PrevInSection.Title }}</a>
             {{ end }}
             {{ if .NextInSection }}
-              <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &raquo;</a>
+            <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &raquo;</a>
             {{ end }}
           </div>
         </section>
@@ -34,7 +45,6 @@
         {{ partial "disqus" . }}
         {{- end }}
       </section>
-
     </main>
     {{ partial "footer.html" . }}
     {{ partial "body-bottom" . }}
