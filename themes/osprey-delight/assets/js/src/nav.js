@@ -1,9 +1,10 @@
 var menuActive = false
 var navFixed = false
 var nav = $('nav')
+var navActive = $('.nav-full')
 navToggleAndLogo = $$('nav > .logo, nav > .nav-toggle')
 
-var navColours = ["darkblue","cornsilk","rebeccapurple", "darkcyan", "deepskyblue"]
+var navColours = ["lightblue","darkkhaki","rebeccapurple", "darkcyan", "deepskyblue"]
 
 
 
@@ -13,6 +14,7 @@ function fixNav(setFixed) {
         let colour = navColours[index];
         console.log(colour);
         nav.style.backgroundColor = colour
+        navActive.style.backgroundColor = colour
         $('#Work').style.color = "white"
         nav.classList.add('nav-fixed')
         navToggleAndLogo.forEach((el) => {

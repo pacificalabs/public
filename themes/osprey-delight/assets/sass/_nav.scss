@@ -90,6 +90,11 @@ nav {
   }
 }
 
+a>.icon {
+    color: #fff !important;
+    transition: color .2s ease-out;
+}
+
 .nav-full {
   position: fixed;
   top: 0;
