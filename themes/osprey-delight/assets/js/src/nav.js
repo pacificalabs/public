@@ -3,12 +3,15 @@ var navFixed = false
 var nav = $('nav')
 navToggleAndLogo = $$('nav > .logo, nav > .nav-toggle')
 
-var navColours = ["hotpink", "darkblue", "aquamarine", "blue", "darkolivegreen"]
+var navColours = ["darkblue","cornsilk","rebeccapurple", "darkcyan", "deepskyblue"]
+
+
 
 function fixNav(setFixed) {
     if (setFixed) {
         let index = Math.floor(Math.random() * navColours.length);
         let colour = navColours[index];
+        console.log(colour);
         nav.style.backgroundColor = colour
         $('#Work').style.color = "white"
         nav.classList.add('nav-fixed')

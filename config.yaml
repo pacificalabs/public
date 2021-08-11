@@ -16,7 +16,7 @@ Params:
   description: "Pacifica - Homepage"
 
   # logoBig appears at the top of the page. Use a path relative to the assets dir for auto-resizing. 
-  logoBig: "pacifica_logo_blue.png"
+  logoBig: "circle-cropped.png"
 
   # logoSmall is the logo that will be shown in the left corner of the nav bar.
   #   Use a path relative to the assets dir for auto-resizing.
