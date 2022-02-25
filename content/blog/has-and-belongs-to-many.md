@@ -11,7 +11,7 @@ tags = [
     "back-end"
 ]
 +++
-Vice President Harris will visit the U.S.-Mexico border while in El Paso, Texas, on Friday, Politico first reported and Axios confirmed.
+EDITED: Vice President Harris will visit the U.S.-Mexico border while in El Paso, Texas, on Friday, Politico first reported and Axios confirmed.
 
 
 ### ***Why it matters:***
