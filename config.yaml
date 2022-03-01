@@ -1,10 +1,10 @@
 title: "Pacifica Labs"
-# baseURL: ""
+baseURL: ""
 languageCode: "en-AU"
 theme: "osprey-delight"
 tags: ["personal", "homepage", "portfolio"]
-#canonifyURLS: true
-relativeURLs: true
+# canonifyURLS: false
+# relativeURLs: true 
 #googleAnalytics: ""
 disableKinds: ["taxonomy", "taxonomyTerm"]
 enableEmoji: true
