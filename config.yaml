@@ -4,7 +4,7 @@ languageCode: "en-AU"
 theme: "osprey-delight"
 tags: ["personal", "homepage", "portfolio"]
 # canonifyURLS: false
-# relativeURLs: true 
+relativeURLs: false
 #googleAnalytics: ""
 disableKinds: ["taxonomy", "taxonomyTerm"]
 enableEmoji: true
