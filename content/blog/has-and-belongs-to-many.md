@@ -2,7 +2,7 @@
 author = "Pacifica Labs"
 title = "Has and Belongs To Many (Headaches)"
 date = "2021-07-23"
-description = "The HABTM association is often confusing & can lead to frustration if defined incorrectly. We provide tips to make the setup painfree."
+description = "We provide tips to make the setup of HABTM associations painfree."
 tags = [
     "ruby-on-rails",
     "active-record",
@@ -11,10 +11,10 @@ tags = [
     "back-end"
 ]
 +++
-EDITED: Vice President Harris will visit the U.S.-Mexico border while in El Paso, Texas, on Friday, Politico first reported and Axios confirmed.
+The HABTM association is often confusing & can lead to frustration if defined incorrectly. Here find instructions on how to set it correctly. 
 
 
-### ***Why it matters:***
+### ***Why this matters:***
 
 Harris, who President Biden put in charge of solving the migrant surge at the southern border, has faced accusations of ignoring the crisis — primarily from Republicans — for not visiting the border.
 
